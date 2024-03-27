@@ -1,0 +1,54 @@
+[
+    {
+    "name": "Butter Chicken",
+    "averageRating": 4.8,
+    "timesSold": 320
+    },
+    {
+    "name": "Biryani",
+    "averageRating": 4.7,
+    "timesSold": 420
+    },
+    {
+    "name": "Paneer Tikka",
+    "averageRating": 4.6,
+    "timesSold": 280
+    },
+    {
+    "name": "Masala Dosa",
+    "averageRating": 4.5,
+    "timesSold": 360
+    },
+    {
+    "name": "Chicken Tikka Masala",
+    "averageRating": 4.9,
+    "timesSold": 500
+    },
+    {
+    "name": "Rogan Josh",
+    "averageRating": 4.4,
+    "timesSold": 240
+    },
+    {
+    "name": "Chole Bhature",
+    "averageRating": 4.6,
+    "timesSold": 300
+    },
+    {
+    "name": "Tandoori Chicken",
+    "averageRating": 4.7,
+    "timesSold": 450
+    },
+    {
+    "name": "Aloo Paratha",
+    "averageRating": 4.4,
+    "timesSold": 260
+    },
+    {
+    "name": "Palak Paneer",
+    "averageRating": 4.5,
+    "timesSold": 380
+    }
+    
+]
+  

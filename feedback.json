@@ -1,0 +1,21 @@
+[
+      {
+        "order_id": "12345",
+        "food_name": "Spaghetti Carbonara",
+        "review": "Delicious! The carbonara sauce was creamy and rich, and the pasta was perfectly cooked.",
+        "rating": 5
+      },
+      {
+        "order_id": "54321",
+        "food_name": "Pepperoni Pizza",
+        "review": "The pizza was amazing, especially the crispy pepperoni. Loved it!",
+        "rating": 4
+      },
+      {
+        "order_id": "98765",
+        "food_name": "Chicken Tikka Masala",
+        "review": "The chicken tikka masala was a bit too spicy for my taste, but the flavor was excellent.",
+        "rating": 3
+      }
+]
+  

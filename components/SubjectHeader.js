@@ -1,0 +1,78 @@
+import React from 'react';
+import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
+import Icon from 'react-native-vector-icons/FontAwesome';
+
+
+const HeaderComponent = ({navigation, subject}) => {
+//   const navigation = useNavigation();
+
+  return (
+    <View style={styles.headerContainer}>
+      {/* <TouchableOpacity onPress={() => navigation.goBack()}>
+        <Ionicons name="ios-arrow-back" size={24} color="black" />
+      </TouchableOpacity> */}
+      <View style={{flexDirection: 'row'}}>
+      <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
+      <Icon name="angle-left" size={37} color="black" style={{marginRight: 20}} />
+        </TouchableOpacity>
+      {/* <Image
+        source={require('../logo.png')}
+        style={styles.logo}
+        resizeMode="contain"
+      /> */}
+      <View style={{justifyContent:'center'}}>
+      <Text style={styles.headerTitle}>
+      {subject.length > 27 ? `${subject.slice(0, 27)}...` : subject}
+      </Text>
+      </View>
+      </View>
+      <View style={styles.rightIconsContainer}>
+        <TouchableOpacity>
+        <Ionicons name="search" size={24} color="black" style={styles.iconMargin} />
+        </TouchableOpacity>
+        <TouchableOpacity >
+        <Ionicons name="person" size={24} color="black" style={{borderRadius: 54}}/>
+        </TouchableOpacity>
+      </View>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  headerContainer: {
+    paddingTop:27,
+    // paddingBottom: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    height: 90,
+    paddingBottom: 10,
+    borderBottomLeftRadius: 30,
+    borderBottomRightRadius: 30,
+    backgroundColor: 'white',
+    zIndex: 2,
+    
+    elevation: 10, // If you want a shadow effect on Android
+  },
+  headerTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  rightIconsContainer: {
+    flexDirection: 'row',
+  },
+  iconMargin: {
+    marginRight: 16,
+  },
+  logo: {
+    width: 40,
+    height: 40,
+    borderRadius: 40,
+    marginRight: 10,
+  },
+});
+
+export default HeaderComponent;
